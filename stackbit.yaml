@@ -1,0 +1,129 @@
+stackbitVersion: ~0.3.0
+ssgName: hugo
+publishDir: public
+dataDir: data
+pagesDir: content
+assets:
+  referenceType: static
+  staticDir: static
+  uploadDir: assets
+  publicPath: /
+models:
+  about:
+    type: page
+    label: About
+    folder: about
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: description
+        label: Description
+      - type: string
+        name: author
+        label: Author
+      - type: date
+        name: date
+        label: Date
+      - type: string
+        name: layout
+        label: Layout
+  blog:
+    type: page
+    label: Blog
+    folder: blog
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: description
+        label: Description
+      - type: string
+        name: author
+        label: Author
+      - type: date
+        name: date
+        label: Date
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: list
+        name: images
+        label: Images
+        items:
+          type: object
+          fields:
+            - type: image
+              name: src
+              label: Src
+            - type: string
+              name: alt
+              label: Alt
+            - type: string
+              name: stretch
+              label: Stretch
+      - type: list
+        name: categories
+        label: Categories
+        items:
+          type: string
+  contact:
+    type: page
+    label: Contact
+    folder: contact
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: layout
+        label: Layout
+      - type: boolean
+        name: netlify
+        label: Netlify
+      - type: string
+        name: emailservice
+        label: Emailservice
+      - type: number
+        name: contactanswertime
+        label: Contactanswertime
+        subtype: int
+  6354_f_801456983_b_22_c_4_b_91_ce_42_adfca_7:
+    type: data
+    label: 6354 F 801456983 B 22 C 4 B 91 Ce 42 Adfca 7
+    folder: comments/6354f801456983b22c4b91ce42adfca7
+    fields:
+      - type: string
+        name: _id
+        label: Id
+      - type: string
+        name: replyThread
+        label: Reply Thread
+      - type: string
+        name: replyID
+        label: Reply ID
+      - type: string
+        name: replyName
+        label: Reply Name
+      - type: string
+        name: name
+        label: Name
+      - type: string
+        name: website
+        label: Website
+      - type: string
+        name: email
+        label: Email
+      - type: string
+        name: body
+        label: Body
+      - type: datetime
+        name: date
+        label: Date
