@@ -8,8 +8,6 @@ assets:
   staticDir: static
   uploadDir: assets
   publicPath: /
-logicFields:
-  - post.markdown_content
 models:
   about:
     type: page
